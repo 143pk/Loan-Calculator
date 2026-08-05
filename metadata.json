@@ -1,0 +1,6 @@
+{
+  "name": "Loan Calculator",
+  "description": "Comprehensive financial loan calculator tool featuring mortgage, auto, personal, and student loan estimations, amortization schedules, side-by-side loan comparisons, and debt payoff planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

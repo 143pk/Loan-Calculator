@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator - Free Monthly Payment & Amortization Estimator</title>
+    
+    <!-- Technical SEO & Meta Tags -->
+    <meta name="description" content="Free comprehensive online loan calculator. Calculate monthly payments, interest rates, total repayment costs, amortization schedules, extra payment payoff savings, and compare loans side-by-side." />
+    <meta name="keywords" content="loan calculator, mortgage calculator, auto loan calculator, personal loan calculator, amortization schedule, loan payment calculator, interest rate calculator, debt payoff calculator" />
+    <meta name="author" content="Loan Calculator Tool" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://loan-calculator.org/" />
+
+    <!-- Search Console Verification -->
+    <meta name="google-site-verification" content="google13c2e7412d3ff1b2" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://loan-calculator.org/" />
+    <meta property="og:title" content="Free Loan Calculator & Amortization Schedule Generator" />
+    <meta property="og:description" content="Calculate loan monthly payments, view full principal vs interest repayment schedules, compare multiple loans side-by-side, and model early payoff strategies." />
+    <meta property="og:image" content="https://loan-calculator.org/favicon.svg" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Loan Calculator" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Free Loan Calculator & Amortization Schedule Generator" />
+    <meta name="twitter:description" content="Calculate loan monthly payments, view full principal vs interest repayment schedules, compare multiple loans side-by-side, and model early payoff strategies." />
+    <meta name="twitter:image" content="https://loan-calculator.org/favicon.svg" />
+
+    <!-- Icons & Manifest -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#0284c7" />
+
+    <!-- Preconnect for performance optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.highperformanceformat.com" crossorigin />
+
+    <!-- Structured Data JSON-LD for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialCalculator",
+      "name": "Loan Calculator",
+      "url": "https://loan-calculator.org/",
+      "description": "Calculate monthly loan payments, interest charges, total costs, amortization schedules, and extra payment payoffs.",
+      "category": "FinancialApplication",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is a loan monthly payment calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monthly loan payments are calculated using the formula: P = [r * A] / [1 - (1 + r)^(-n)], where P is monthly payment, A is principal loan amount, r is monthly interest rate (annual percentage rate / 12), and n is total number of monthly payments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much can I save by making extra principal payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Making extra monthly or lump-sum principal payments directly reduces the outstanding loan balance, lowering future compound interest charges and shortening your total repayment term significantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an amortization schedule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An amortization schedule is a complete table showing every periodic loan payment over time, detailing how much goes toward principal versus interest and the remaining loan balance after each payment."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
