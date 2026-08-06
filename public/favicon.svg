@@ -1,6 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <rect width="512" height="512" rx="110" fill="#0284c7"/>
-  <path d="M140 380V132h60v190h110v58H140z" fill="#ffffff"/>
-  <path d="M280 200a50 50 0 1 1 100 0 50 50 0 0 1-100 0zm0 110a50 50 0 1 1 100 0 50 50 0 0 1-100 0z" fill="#38bdf8"/>
-  <circle cx="380" cy="150" r="28" fill="#f59e0b"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="60%" stop-color="#0f2b48" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="512" height="512" rx="116" fill="url(#bg)" />
+  <rect x="8" y="8" width="496" height="496" rx="108" fill="none" stroke="url(#accent)" stroke-width="6" opacity="0.35" />
+
+  <!-- Grid lines -->
+  <path d="M120 100h272M120 412h272" stroke="#38bdf8" stroke-width="1.5" opacity="0.15" stroke-dasharray="8 8" />
+
+  <!-- Calculator Screen -->
+  <rect x="116" y="96" width="280" height="96" rx="20" fill="#071426" stroke="url(#accent)" stroke-width="3" />
+  <rect x="116" y="96" width="280" height="48" rx="20" fill="url(#glass)" />
+  
+  <!-- LED Values -->
+  <rect x="144" y="130" width="70" height="28" rx="6" fill="#0284c7" opacity="0.4" />
+  <rect x="226" y="130" width="60" height="28" rx="6" fill="#38bdf8" opacity="0.7" />
+  <circle cx="352" cy="144" r="14" fill="url(#gold)" filter="url(#glow)" />
+
+  <!-- Calculator Buttons -->
+  <rect x="116" y="216" width="76" height="64" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2" />
+  <rect x="218" y="216" width="76" height="64" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2" />
+  <rect x="320" y="216" width="76" height="64" rx="14" fill="url(#accent)" />
+
+  <rect x="116" y="304" width="76" height="96" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2" />
+  <rect x="218" y="304" width="76" height="96" rx="14" fill="#1e293b" stroke="#334155" stroke-width="2" />
+  <rect x="320" y="304" width="76" height="96" rx="14" fill="url(#gold)" />
+
+  <!-- Button symbols -->
+  <path d="M142 248h24M154 236v24" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+  <path d="M244 248h24" stroke="#94a3b8" stroke-width="4" stroke-linecap="round" />
+  <path d="M344 240h28M344 256h28" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Financial Trend Growth Curve -->
+  <path d="M136 360 Q 230 340, 340 230" fill="none" stroke="url(#accent)" stroke-width="12" stroke-linecap="round" filter="url(#glow)" />
+  <path d="M305 225 L 355 220 L 350 270" fill="none" stroke="url(#accent)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Nodes -->
+  <circle cx="154" cy="352" r="8" fill="#38bdf8" />
+  <circle cx="256" cy="352" r="8" fill="#38bdf8" />
 </svg>

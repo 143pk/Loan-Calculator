@@ -1,6 +1,6 @@
 {
-  "short_name": "Loan Calc",
-  "name": "Loan Calculator - Free Amortization & Mortgage Estimator",
+  "short_name": "Loan Calculator",
+  "name": "Loan Calculator",
   "description": "Calculate monthly loan payments, interest rates, total cost, amortization schedules, and extra payment payoffs.",
   "icons": [
     {
